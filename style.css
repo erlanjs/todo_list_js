@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: url("./img/bg.jpg") no-repeat center / cover;
+    min-height: 100vh;
+}
+
+.wrapper{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper .inputField{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.inputField input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.inputField button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #8e49eb;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.todoList li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoList li span{
+    position: absolute;
+    right: -45px;
+    color: #ffffff;
+    width: 45px;
+    text-align: center;
+    background: #e74c3c;
+    border-radius: 0 3px 3px 0 ;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.todoList li:hover span{
+    right: 0;
+
+}
+
+.todoList li span:hover{
+    background: rgba(18, 180, 11, 0.79);
+}
+
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer button{
+    border: none;
+    outline: none;
+    background: #8e49eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+
+
+.modal-todo{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+
+}
+
+.modal-todo-center{
+    width: 800px;
+    height: 200px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 0 30px;
+}
+
+.m-t-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.m-t-input{
+    height: 30px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 15px;
+    width: 87%;
+}
+
+.modal-todo-center div button{
+    height: 30px;
+    background: #8e49eb;
+    border: none;
+    border-radius: 3px;
+    color:#FFFFFF;
+    font-size: 18px ;
+    font-weight: bold;
+}
+.modal-todo-center div{
+    margin-top: 20px;
+}
+
+
